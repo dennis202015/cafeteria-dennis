@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafetería de Dennis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>☕ Mi Cafetería</h1>
+        <p>Selecciona tus productos. Puedes eliminar errores haciendo clic en la X.</p>
+    </header>
+
+    <h2 class="titulo-seccion">Nuestros Cafés</h2>
+    <div class="contenedor">
+        <div class="producto" data-nombre="Latte Especial" data-precio="3.50">
+            <img src="https://images.unsplash.com/photo-1541167760496-162955ed8a9f?w=300" alt="Latte">
+            <h3>Latte Especial</h3>
+            <p class="precio">$3.50</p>
+            <button class="btn-agregar">Agregar al Pedido</button>
+        </div>
+
+        <div class="producto" data-nombre="Americano" data-precio="2.50">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=300" alt="Americano">
+            <h3>Americano</h3>
+            <p class="precio">$2.50</p>
+            <button class="btn-agregar">Agregar al Pedido</button>
+        </div>
+    </div>
+
+    <h2 class="titulo-seccion">Postres Deliciosos</h2>
+    <div class="contenedor">
+        <div class="producto" data-nombre="Pastel de Chocolate" data-precio="4.00">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=300" alt="Pastel">
+            <h3>Pastel de Chocolate</h3>
+            <p class="precio">$4.00</p>
+            <button class="btn-agregar">Agregar al Pedido</button>
+        </div>
+
+        <div class="producto" data-nombre="Cheesecake" data-precio="4.50">
+            <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=300" alt="Cheesecake">
+            <h3>Cheesecake</h3>
+            <p class="precio">$4.50</p>
+            <button class="btn-agregar">Agregar al Pedido</button>
+        </div>
+    </div>
+
+    <div class="carrito">
+        <h3>Tu Pedido:</h3>
+        <ul id="lista-pedido"></ul>
+        <hr>
+        <h4>Total a Pagar: $<span id="total-precio">0.00</span></h4>
+        <button id="btn-confirmar" class="btn-final">Confirmar Pedido</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
